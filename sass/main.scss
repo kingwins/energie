@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+$font-family-sans-serif: Titillium Web,sans-serif;
+
+
+// colors
+/* Basic */
+$col-blue: #2e5586;
+$col-grey1: #7a858c;
+$col-grey1-80: #959da3;
+$col-grey1-60: #afb6ba;
+$col-grey1-30: #d7dadc;
+$col-grey1-15: #ebeced;
+$col-grey2: #5a666f;
+/* Magazine */
+$col-ew: #003a6e;
+$col-netzpraxis: #009ba4;
+$col-et: #00a0e0;
+$col-ehp: #f20033;
+$col-ste: #12617b;
+
+$theme-colors: (
+  "col-blue": $col-blue,
+  "col-grey1": $col-grey1,
+  "col-grey1-80": $col-grey1-80,
+  "col-grey1-60": $col-grey1-60,
+  "col-grey1-30": $col-grey1-30,
+  "col-grey1-15": $col-grey1-15,
+  "col-grey2": $col-grey2,
+  "col-ew": $col-ew,
+  "col-netzpraxis": $col-netzpraxis,
+  "col-et": $col-et,
+  "col-ehp": $col-ehp,
+  "col-ste": $col-ste,
+);
+$primary:       $col-blue;
+$secondary:     $col-grey1;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1100px,
+  xl: 1100px
+);
+$container-max-widths: (
+  sm: 100%,
+  md: 990px,
+  lg: 990px,
+  xl: 990px
+);
+$border-radius:               0;
+$border-radius-lg:            0;
+$border-radius-sm:            0;
+
+$nav-tabs-border-width:            0;
+$nav-tabs-link-active-color:       $col-grey1-60;
+
+$navbar-light-color:                $col-blue;
+$navbar-light-hover-color:          $col-grey1;
+$navbar-light-active-color:         $col-grey1;
+
+$dropdown-border-width:             none;
+
+$navbar-toggler-border-radius:      0;
+
+
+
+
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/dropdown";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/transitions";
+
